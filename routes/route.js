@@ -11,7 +11,7 @@ router.get('/', async (request, response) => {
         const randomJoke = await jokeModel.findOne().skip(randomIndex);
 
         return response.status(200).json({
-            data: randomJoke,
+            data: randomJoke.text,
         });
     } catch (error) {
         console.log(error.message);

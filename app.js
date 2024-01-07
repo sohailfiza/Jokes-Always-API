@@ -15,8 +15,8 @@ app.use(cors());
 
 
 app.use('/joke', router);
-app.use('/doctorJoke', routerTwo);
-app.use('/engineerJoke', routerThree);
+app.use('/drJoke', routerTwo);
+app.use('/erJoke', routerThree);
 
 
 mongoose
